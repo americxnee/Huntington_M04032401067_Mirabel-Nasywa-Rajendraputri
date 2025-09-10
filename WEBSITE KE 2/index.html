@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Pekan Ilkomerz 61</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome untuk icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+  <button id="back-to-top">⬆</button>
+<body>
+  <!-- Header -->
+  <header>
+    <h1><span id="typing"></span></h1>
+    <p>I'm <b>Mira</b>, a Computer Science student at <b>IPB University</b></p>
+    <button onclick="toggleDarkMode()">🌙 Choose Your Mode</button>
+  </header>
+
+  <!-- Biodata -->
+  <section class="card" data-aos="fade-up">
+    <img src="miraw.jpeg" alt="Foto Profil" class="profile-pic"
+    class="hobby-img" onclick="openLightbox(this)">
+    <h2>Profile</h2>
+    <ul>
+      <li><b>Name:</b> Mirabel Nasywa Rajendraputri</li>
+      <li><b>Student ID:</b> M0403241067</li>
+      <li><b>Major:</b> Ilmu Komputer</li>
+      <li><b>Proxy Name:</b> Huntington</li>
+      <li><b>Email:</b> <a href="mailto:mira@student.ipb.ac.id">allaboutzmirabel@apps.ipb.ac.id</a></li>
+    </ul>
+  </section>
+
+  <!-- Tentang Saya -->
+  <section class="card" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      A Computer Science student actively involved in organizations and commitees. Skilled in problem-solving and passionate about technology, with a focus on personal growth, social communication, and a commitment to creating a positive social impact
+    </p>
+  </section>
+
+  <!-- Skill -->
+  <section class="card" data-aos="fade-up">
+    <h2>Skill</h2>
+    <div class="skill">
+      <p>Microsoft Office</p>
+      <div class="progress"><div class="progress-bar" style="width: 89%;">89%</div></div>
+      <p>English</p>
+      <div class="progress"><div class="progress-bar" style="width: 75%;">75%</div></div>
+      <p>Problem Solving</p>
+      <div class="progress"><div class="progress-bar" style="width: 90%;">90%</div></div>
+    </div>
+  </section>
+
+  <!-- Hobbies -->
+<section class="card hobbies" data-aos="fade-up">
+  <h2>Hobbies</h2>
+  <div class="hobby-grid">
+    <div class="hobby-card">
+      <img src="hobby1.jpg" alt="Hobby 1 - Photography" class="hobby-img" onclick="openLightbox(this)">
+      <h3>Listening to Music</h3>
+    </div>
+
+    <div class="hobby-card">
+      <img src="hobby2.jpg" alt="Hobby 2 - Cooking" class="hobby-img" onclick="openLightbox(this)">
+      <h3>Reading Books</h3>
+    </div>
+
+    <div class="hobby-card">
+      <img src="hobby3.jpg" alt="Hobby 3 - Coding" class="hobby-img" onclick="openLightbox(this)">
+      <h3>Watching Movies</h3>
+    </div>
+  </div>
+</section>
+
+  <!-- Sosial Media -->
+  <section class="card" data-aos="fade-up">
+    <h2>Connect With Me at</h2>
+    <p>
+      <a href="https://instagram.com/mirabelnsy_" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> |
+      <a href="https://github.com/americxnee" target="_blank"><i class="fab fa-github"></i> GitHub</a> |
+      <a href="https://www.linkedin.com/in/mirabelnasywa" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </p>
+  </section>
+
+  <section id="gallery">
+  <h2>Pieces of Me</h2>
+  <div class="gallery">
+    <img src="galery1.jpeg" alt="Foto 1">
+    <img src="gallery2.jpeg" alt="Foto 2">
+    <img src="gallery3.jpeg" alt="Foto 3">
+    <img src="gallery4.jpeg" alt="Foto 4">
+    <img src="gallery5.jpeg" alt="Foto 5">
+    <img src="gallery6.jpeg" alt="Foto 6">
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <span class="close">&times;</span>
+    <span class="prev">&#10094;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <span class="next">&#10095;</span>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mira - Mahasiswa Ilmu Komputer IPB University</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+
+</body>
+</html>

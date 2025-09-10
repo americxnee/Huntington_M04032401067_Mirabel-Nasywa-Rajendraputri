@@ -1,0 +1,297 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #55768c;
+  color: #333;
+  transition: 0.3s;
+}
+
+header {
+  background: linear-gradient(90deg, #c43670, #dc97a5);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+button {
+  background: #8457747;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+button:hover {
+  background: #8457747;
+}
+
+/* Card */
+.card {
+  background: #f5f2f0;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Foto Profil */
+.profile-pic {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  border: 4px solid #55768c;
+  transition: transform 0.2s;
+}
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+/* Skill Bar */
+.progress {
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.progress-bar {
+  background: #55768c;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.modal-content {
+  background: white;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+.close {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+/* Hobbies grid */
+.hobbies .hobby-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-items: start;
+  margin-top: 10px;
+}
+
+@media (min-width: 700px) {
+  .hobbies .hobby-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.hobby-card {
+  text-align: center;
+  padding: 16px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(250,250,250,0.9));
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.hobby-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #eee;
+  margin: 0 auto 12px;
+  display: block;
+  transition: transform .25s ease, box-shadow .25s ease;
+  cursor: pointer;
+}
+.hobby-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.hobby-card h3 {
+  margin: 6px 0 4px;
+  color: #2c7be5; /* adjust to your primary color */
+}
+.hobby-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Lightbox (simple) */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.lightbox:target { /* if you use :target technique instead of JS */
+  display: flex;
+}
+
+#typing {
+  color: #f0f0f0;
+  font-weight: bold;
+  border-right: 2px solid #55768c;
+  padding-right: 5px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Back to Top Button */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #55768c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Gallery Section */
+#gallery {
+  text-align: center;
+  padding: 40px;
+  background: #f9f9f9;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.dark-mode #gallery {
+  background: #394c5c; /* navy gelap */
+  color: #f0f0f0;
+  border: 1px solid #2c3e50;
+}
+
+.dark-mode #gallery img {
+  border: 2px solid #f0f0f0;
+}
+
+/* Lightbox */
+#lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 12px;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Next & Prev */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 60px;
+  color: #fff;
+  padding: 16px;
+  margin-top: -50px;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.prev:hover, .next:hover {
+  color: #f1c40f;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #0e141c;
+  color: #f0f0f0;
+}
+.dark-mode .card {
+  background: #394c5c;
+  color: #f0f0f0;
+}
